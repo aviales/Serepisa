@@ -195,8 +195,6 @@ p {
 
 /*===== All Section Title Style =====*/
 
-.section_title {}
-
 .section_title .main_title {
     font-size: 48px;
     color: #002639;
@@ -469,8 +467,6 @@ p {
     top: -7px;
 }
 
-.navbar-nav {}
-
 .navbar-nav li {
     margin: 0 10px;
     position: relative;
@@ -562,10 +558,6 @@ p {
     top: 0;
     left: 100%;
 }
-
-.navbar-nav li .sub-menu li .sub-menu li {}
-
-.navbar-nav li .sub-menu li .sub-menu li a {}
 
 .navbar-nav li a .sub-nav-toggler span {
     width: 8px;
@@ -918,8 +910,6 @@ p {
     03.Slider css 
 ===========================*/
 
-.slider_area {}
-
 .single_slider {
     height: 800px;
     position: relative;
@@ -963,8 +953,6 @@ p {
 .slider_content .main-btn {
     margin-top: 45px;
 }
-
-.slider-active {}
 
 .slider-active .slick-arrow {
     position: absolute;
@@ -1317,8 +1305,6 @@ p {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-.single_features .features_icon {}
 
 .single_features .features_content {
     margin-top: 25px;
@@ -2449,7 +2435,6 @@ p {
 .single_blog:hover .blog_image img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    brs
 }
 
 .single_blog .blog_content {
@@ -3108,7 +3093,7 @@ p {
     z-index: -1;
 }
 
-.about_image_4 & img {
+.about_image_4 img {
     width: 100%;
 }
 
@@ -4045,8 +4030,6 @@ p {
 /*===========================
     31.Testimonial css 
 ===========================*/
-
-.testimonial_area_3 {}
 
 .testimonial_title_wrapper_2 {
     position: relative;
@@ -5271,8 +5254,6 @@ p {
     39.Contact css 
 ===========================*/
 
-.contact_area {}
-
 .contact_info .single_info .info_icon i {
     width: 50px;
     height: 50px;
@@ -5340,4 +5321,89 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.footer .footer-above .container .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer .footer-above .container .redes-sociales .social {
+    width: 4.375rem;
+    height: 4.375rem;
+    background: #f1f1f1;
+    margin: 0 0.625rem;
+    border-radius: 30%;
+    box-shadow: 0 0.3125rem 0.9375rem -0.3125rem #00000070;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer .footer-above .container .redes-sociales .social i {
+    line-height: 4.375rem;
+    font-size: 1.4375rem;
+    transition: 0.2s linear;
+}
+
+.footer .container .redes-sociales .linkedin {
+    color: #0e76a8;
+}
+
+.footer .container .redes-sociales .whatsapp {
+    color: #0acf1b;
+}
+
+.footer .container .redes-sociales .twitter {
+    color: #00acee;
+}
+
+.footer .container .redes-sociales .behance {
+    color: #2b2dc4;
+}
+
+.footer .container .redes-sociales .github {
+    color: #333333;
+}
+
+.footer .container .redes-sociales .social:hover i {
+    transform: scale(1.3);
+    color: #ffffff;
+}
+
+.footer .container .redes-sociales .social::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.footer .container .redes-sociales .linkedin::before {
+    background: #0e76a8;
+}
+
+.footer .container .redes-sociales .whatsapp::before {
+    background: #0acf1b;
+}
+
+.footer .container .redes-sociales .twitter::before {
+    background: #00acee;
+}
+
+.footer .container .redes-sociales .behance::before {
+    background: #2b2dc4;
+}
+
+.footer .container .redes-sociales .github::before {
+    background: #333333;
+}
+
+.footer .container .redes-sociales .social:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
 }

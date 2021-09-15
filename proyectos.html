@@ -26,7 +26,11 @@
 
     <!-- Syntax Highlight -->
     <link rel="stylesheet" href="css2/markdown-highligth.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -83,7 +87,7 @@
     <!--====== Header Desktop PART START ======-->
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -284,7 +288,7 @@
         </div>
     </section>
 
-    <section class="success" id="source" data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim">
+    <section class="success" id="source" data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim" style="background-color: #ff1616;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -294,27 +298,53 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p class="contrast">
-                        ScrollReveal is an <a href="http://anijs.github.io/">AniJS</a> helper function, that allows you to animate several components when they enter the viewport. If you don't now nothing about <a href="http://anijs.github.io/">AniJS</a>,
-                        you can find documentation an examples at the <a href="http://anijs.github.io/">official site</a>.
-                    </p>
+                    <div class="w-full max-w-xs img-centered">
+                        <form id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                                    Nombre
+                                </label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="text" placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                                    Apellidos
+                                </label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="lastname" id="lastname" type="text" placeholder="Ingresa tus apellidos" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                                    Correo
+                                </label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" id="email" type="email" placeholder="Ingresa tu correo" required>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button id="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                        <!-- <p class="text-center text-gray-500 text-xs">
+                            Desarrollado por: <b><a target="_blank" href="">Alonso Viales</a></b>
+                        </p> -->
+                    </div>
 
-                    <p class="text-center special-sintax">
+                    <!-- <p class="text-center special-sintax">
                         <strong class="anijs-sintax if">If:</strong> scroll, <strong class="anijs-sintax">on:</strong> window, <strong class="anijs-sintax">do:</strong> animation, <strong class="anijs-sintax">to:</strong> any element
-                    </p>
+                    </p> -->
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="http://anijs.github.io/" class="btn btn-lg btn-outline">
                         Go to AniJS
                     </a>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
         </div>
     </section>
 
-    <section id="using" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+    <!-- <section id="using" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -324,36 +354,36 @@
             </div>
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-1">
-                    <p>1 - Put the ScrollReveal helper file on your page after the AniJS core file.</p>
+                    <p>1 - Put the ScrollReveal helper file on your page after the AniJS core file.</p> -->
 
-                    <!-- Syntax Highlight -->
-                    <div class="highlight highlight-xml"><pre><span class="c">&lt;!-- AniJS Core File --&gt;</span>
+    <!-- Syntax Highlight -->
+    <!-- <div class="highlight highlight-xml"><pre><span class="c">&lt;!-- AniJS Core File --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"anijs-min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="c">&lt;!-- ScrollReveal Helper --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"helpers/scrollreveal/anijs-helper-scrollreveal-min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-</pre></div>
-                    <!-- End Syntax Highlight -->
+</pre></div> -->
+    <!-- End Syntax Highlight -->
 
-                    <p>2- Create a declarative sentence with <strong>if</strong> , <strong>on</strong> and <strong>Before</strong> definitions as it is shown in this example:</p>
-                    <!-- Syntax Highlight -->
-                    <div class="highlight highlight-xml"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">data-anijs=</span><span class="s">"if: scroll, on: window, do: swing animated, before: scrollReveal"</span><span class="nt">&gt;&lt;/div&gt;</span>
-</pre></div>
-                    <!-- End Syntax Highlight -->
+    <!-- <p>2- Create a declarative sentence with <strong>if</strong> , <strong>on</strong> and <strong>Before</strong> definitions as it is shown in this example:</p> -->
+    <!-- Syntax Highlight -->
+    <!-- <div class="highlight highlight-xml"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">data-anijs=</span><span class="s">"if: scroll, on: window, do: swing animated, before: scrollReveal"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div> -->
+    <!-- End Syntax Highlight -->
 
-                    <p>3 - Don't forget to add the CSS animation styles definition. </p>
-                    <!-- Syntax Highlight -->
-                    <div class="highlight highlight-xml"><pre><span class="nt">&lt;head&gt;</span>
+    <!-- <p>3 - Don't forget to add the CSS animation styles definition. </p> -->
+    <!-- Syntax Highlight -->
+    <!-- <div class="highlight highlight-xml"><pre><span class="nt">&lt;head&gt;</span>
     <span class="c">&lt;!-- AniCollection.css library --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://anijs.github.io/lib/anicollection/anicollection.css"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
-</pre></div>
-                    <!-- End Syntax Highlight -->
+</pre></div> -->
+    <!-- End Syntax Highlight -->
 
-                    <p>4 - Full initialization code:</p>
+    <!-- <p>4 - Full initialization code:</p> -->
 
-                    <!-- Syntax Highlight -->
-                    <div class="highlight highlight-xml"><pre><span class="nt">&lt;head&gt;</span>
+    <!-- Syntax Highlight -->
+    <!-- <div class="highlight highlight-xml"><pre><span class="nt">&lt;head&gt;</span>
     <span class="c">&lt;!-- AniCollection.css library --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://anijs.github.io/lib/anicollection/anicollection.css"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
@@ -367,31 +397,30 @@
     <span class="c">&lt;!-- ScrollReveal Helper --&gt;</span>
     <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"bower_components/anijs/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-</pre></div>
-                    <!-- End Syntax Highlight -->
+</pre></div> -->
+    <!-- End Syntax Highlight -->
 
-                    <p>For more details about how to use AniJS you may go to <a href="http://anijs.github.io/#using">AniJS Official Website</a>. Besides, if yo want to create your own helper functions you may read about it in <a href="https://github.com/anijs/anijs/wiki/Writing-before-and-after-functions">Writing before and after functions </a>.</p>
+    <!-- <p>For more details about how to use AniJS you may go to <a href="http://anijs.github.io/#using">AniJS Official Website</a>. Besides, if yo want to create your own helper functions you may read about it in <a href="https://github.com/anijs/anijs/wiki/Writing-before-and-after-functions">Writing before and after functions </a>.</p>
 
 
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+    </div>
+    </div>
+    </section> -->
 
     <footer id="source" class="text-center" data-anijs="if: scroll, on:window, do: flipInY animated, before: scrollReveal, after: removeAnim">
         <div class="footer-above">
             <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-8 col-lg-offset-2">
-                        <h3>Source</h3>
-                        <a href="https://github.com/anijs/examples/tree/gh-pages/scrollreveal" class="btn btn-md btn-outline">
-                                Fork on GitHub <i class="fa fa-github"></i>
-                            </a>
-                        <a href="https://github.com/anijs/examples/archive/gh-pages.zip" class="btn btn-md btn-outline">
-                                Download as ZIP <i class="fa fa-floppy-o"></i>
-                            </a>
-                    </div>
+                <div class="redes-sociales1" id="contacto">
+                    <a href="https://www.linkedin.com" target="_blank" class="social linkedin" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+50683944887&amp;text=Hola, mi nombre es Rolando, cómo te puedo ayudar?" target="_blank" class="social whatsapp" title="whatsapp">
+                        <i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.behance.net/" target="_blank" class="social behance" title="behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://github.com/" target="_blank" class="social github" title="GitHub"><i
+                                class="fab fa-github"></i></a>
                 </div>
+                <p class="autor">Alonso Viales Arrieta- 2021</p>
+                <span><i class="boton-arriba fa fa-chevron-up" id="boton-arriba" aria-hidden="true"></i></span>
             </div>
         </div>
         <div class="footer-below" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -399,7 +428,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <p>
-                            Made with <span class="bounceIn animated infinite">♥</span> by <a style="color:#CCB2A3;" href="https://twitter.com/dariel_noel">@dariel_noel</a>.
+                            Made <span class="bounceIn animated infinite">♥</span> by <a style="color:#CCB2A3;" href="">madPC</a>.
                         </p>
 
                     </div>
@@ -407,14 +436,9 @@
             </div>
         </div>
     </footer>
+    ç
 
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
+    <!-- Portfolio Modal</div>s -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -803,7 +827,10 @@
     <script src="js/anijs/anijs.js"></script>
     <script src="js/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
 
-
+    <script src="https://kit.fontawesome.com/1e268974cb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/helpers.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 
