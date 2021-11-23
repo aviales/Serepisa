@@ -5391,3 +5391,9 @@ p {
     top: -10%;
     left: -10%;
 }
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
