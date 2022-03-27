@@ -1,29 +1,29 @@
-.anijs-sintax{
-	font-size: 140%;
-	color: #FFB585;
+.anijs-sintax {
+    font-size: 140%;
+    color: #FFB585;
 }
 
-.if{
-	color: #FFB585;
+.if {
+    color: #FFB585;
 }
 
-.on{
-	color: #CCB2A3;
+.on {
+    color: #CCB2A3;
 }
 
-.special-sintax{
-	font-size: 150%;
+.special-sintax {
+    font-size: 150%;
 }
 
 .ball {
-    position:relative;
+    position: relative;
     animation: bounce 2s infinite;
     -webkit-animation: bounceBall 2s;
 }
 
-p.contrast a{
+p.contrast a {
     color: #FFB585;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 @keyframes bounceBall {
@@ -31,7 +31,10 @@ p.contrast a{
         top: 0;
         animation-timing-function: ease-in;
     }
-    16%, 48%, 78%, 100% {
+    16%,
+    48%,
+    78%,
+    100% {
         top: 190px;
         animation-timing-function: ease-out;
     }
@@ -48,12 +51,16 @@ p.contrast a{
         animation-timing-function: ease-in;
     }
 }
+
 @-webkit-keyframes bounceBall {
     0% {
         top: 0;
         -webkit-animation-timing-function: ease-in;
     }
-    16%, 48%, 78%, 100% {
+    16%,
+    48%,
+    78%,
+    100% {
         top: 190px;
         -webkit-animation-timing-function: ease-out;
     }
@@ -69,4 +76,9 @@ p.contrast a{
         top: 150px;
         -webkit-animation-timing-function: ease-in;
     }
+}
+
+.matsan {
+    height: 25px;
+    width: 25px;
 }
