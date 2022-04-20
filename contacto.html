@@ -122,7 +122,8 @@
     <link rel="stylesheet" href="css/flexslider.css" />
 
     <!-- Template styles-->
-
+    <!-- Enlazar CSS Floating WhatsApp -->
+    <link rel="stylesheet" href="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.css">
 
 
     <!-- <script type="text/javascript" src="../maps.google.com/maps/api/js%3Fsensor=false"></script> -->
@@ -566,7 +567,7 @@
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="index.html# " class="back-to-top "><i class="fa fa-chevron-up "></i></a>
-
+    <div id="WABoton"></div>
     <!--====== BACK TOP TOP PART ENDS ======-->
 
 
@@ -646,7 +647,30 @@
     <script type="text/javascript " src="js3/owl.carousel.min.js "></script>
     <script type="text/javascript " src="js3/jquery.mobile-menu.min.js "></script>
     <script type="text/javascript " src="js3/cloud-zoom.js "></script>
-
+    <!-- Inicializar librería Floating WhatsApp  -->
+    <script>
+        jQuery(document).ready(function($) {
+            $('#WABoton').floatingWhatsApp({
+                phone: '+50686197573', // Número WhatsApp Business
+                popupMessage: 'Hola 👋 ¿Cómo podemos ayudarte?', // Mensaje pop up
+                message: "Hola, quisiera información sobre sus servicios...", // Mensaje por defecto
+                showPopup: true, // Habilita el pop up
+                headerTitle: 'WhatsApp Chat', // Título del header
+                headerColor: '#ff030e', // Color del header
+                buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', // Icono WhatsApp
+                size: '72px', // Tamaño del icono
+                //backgroundColor: '#00000', // Color de fondo del botón
+                position: "left", // Posición del icono
+                avatar: 'https://serepisa.s3.us-west-1.amazonaws.com/images/LogoSEREPISA.png', // URL imagen avatar
+                avatarName: 'Serepisa S.A.', // Nombre del avatar
+                avatarRole: 'Servicio al cliente', // Rol del avatar
+                //autoOpenTimeout: 3000,
+                zIndex: '99999',
+            });
+        });
+    </script>
+    <!-- Enlazar JS Floating WhatsApp -->
+    <script type="text/javascript" src="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.js"></script>
 </body>
 
 </html>
